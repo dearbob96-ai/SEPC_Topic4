@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>淡江大學與淡水區國際友善空間體檢報告</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Chosen Palette: Navy Blue, Slate Gray, and Accent Blue. (bg-slate-50, text-slate-800, primary-blue-800, accent-blue-600). Gives an academic, professional, yet modern interactive document feel. -->
-    
-    <!-- Application Structure Plan: 
-    This SPA translates a dense academic/planning report into an easily navigable interactive document. 
-    - Structure: A fixed sidebar (on desktop) for quick chapter jumping, and a main reading area. 
-    - Interactions: 
-      1. Scrollspy for the sidebar to highlight current reading position.
-      2. Accordion/Card layouts to break down long paragraphs in chapters 2 & 3.
-      3. An interactive "Field Survey Checklist" in Chapter 4, allowing users to check off tasks, connected to a Chart.js progress tracker to provide a gamified/task-oriented conclusion.
-    This structure is chosen because it respects the linear narrative of the report while enhancing scannability and practical utility for field researchers.
-    -->
-
-    <!-- Visualization & Content Choices: 
-    - Goal: Track field survey progress -> Viz: Interactive Doughnut Chart (Chart.js) -> Interaction: Checking boxes in the Chapter 4 table dynamically updates the chart. Justification: Turns static tables into a usable tool for the research team. NO SVG used.
-    - Goal: Organize heavy text -> Viz: Thematic Cards -> Interaction: Hover effects and clear visual hierarchy. Justification: Prevents reader fatigue. NO SVG used.
-    -->
-
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-
     <style>
         /* Hide scrollbar for sidebar but allow scroll */
         .no-scrollbar::-webkit-scrollbar {
@@ -75,7 +55,7 @@
 
             <!-- Chapter 1 -->
             <section id="ch1" class="mb-16 scroll-mt-20">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"><span>📖</span> 第一章：緒論與評估框架</h3>
+                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"> 第一章：緒論與評估框架</h3>
                 <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed">
                     <p>在全球化與跨國流動日益頻繁的當代社會，高等教育機構與地方城市的治理能力，已不再僅限於單一文化群體的服務與硬體建設，而是擴展至對多元文化、多語境以及跨國界人口的包容性與支持度。面對淡江大學全英語授課學程中日益多元的國際化學習社群，以及新北市淡水區因觀光與移居所帶來的人口結構變遷，空間的設計與社會制度的建構必須超越傳統的同化主義（Assimilationism），轉而採取更具深度的跨文化策略。</p>
                     
@@ -93,24 +73,24 @@
 
             <!-- Chapter 2 -->
             <section id="ch2" class="mb-16 scroll-mt-20">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"><span>🏫</span> 第二章：淡江大學國際友善校園體檢與系統性分析</h3>
+                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"> 第二章：淡江大學國際友善校園體檢與系統性分析</h3>
                 <p class="text-slate-600 mb-8 leading-relaxed">淡江大學在境外生招募與輔導機制上展現了顯著的擴張與制度化，學生來源涵蓋全球七十個國家，此一龐大且多樣化的人口結構，迫使校園的硬體設施與軟體輔導系統進行全面性的轉型與升級。</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2">♿ 2.1 無障礙平權與通用設計</h4>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2"> 2.1 無障礙平權與通用設計</h4>
                         <p class="text-sm text-slate-600 leading-relaxed">具備深厚歷史脈絡。從1988年引入英文版盲用電腦到成立點譯圖書職場。現代校園廣設無障礙坡道、友善廁所。近期更獲教育部320萬專案補助，針對守謙國際會議中心及工學大樓進行設施細節優化。</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2">🤝 2.2 跨國界學生行政支持矩陣</h4>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2"> 2.2 跨國界學生行政支持矩陣</h4>
                         <p class="text-sm text-slate-600 leading-relaxed">「國際處境外生輔導組」為核心，針對不同國籍設專責人員。外籍生師生比控制在1:6。支援網絡水平延伸至生輔組、諮輔中心、宿輔組與衛保組，形成全方位防護網。</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2">💬 2.3 跨文化對話與全球視野</h4>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2"> 2.3 跨文化對話與全球視野</h4>
                         <p class="text-sm text-slate-600 leading-relaxed">設置「國際空間」進行語言交換；蘭陽校區落實全英語教學環境。舉辦「說出影響力」工作坊，倡導「黃金7:3法則」與「暫停判斷、轉換情境、直接澄清」三步驟心法。</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2">🕌 2.4 宗教多樣性包容</h4>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3 border-b pb-2"> 2.4 宗教多樣性包容</h4>
                         <p class="text-sm text-slate-600 leading-relaxed">獲教育部友善境外生校園特優。設立穆斯林祈禱室，並在特定男女廁所裝設淨下專用噴水器(Bidet)。研究生宿舍規劃穆斯林專用廚房，確保清真飲食安全。</p>
                     </div>
                 </div>
@@ -127,7 +107,7 @@
 
             <!-- Chapter 3 -->
             <section id="ch3" class="mb-16 scroll-mt-20">
-                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"><span>🏙️</span> 第三章：新北市淡水區國際友善城市體檢</h3>
+                <h3 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2"> 第三章：新北市淡水區國際友善城市體檢</h3>
                 <p class="text-slate-600 mb-8 leading-relaxed">淡水區因豐富歷史資產、觀光人潮及鄰近學術聚落，其友善城市的推動成效具高度指標性。核心在於讓外國人順利融入在地生活與工作。</p>
 
                 <div class="space-y-4">
@@ -186,56 +166,49 @@
             <section id="ch4" class="mb-16 scroll-mt-20">
                 <div class="flex justify-between items-end mb-6">
                     <div>
-                        <h3 class="text-2xl font-bold text-blue-900 flex items-center gap-2 mb-2"><span>📸</span> 第四章：田野調查影像展示</h3>
+                        <h3 class="text-2xl font-bold text-blue-900 flex items-center gap-2 mb-2"> 第四章：田野調查影像展示</h3>
                         <p class="text-slate-600 text-sm">以下為本次實地田野調查所採集的影像紀錄，分為校園與城市兩大核心場域。</p>
                     </div>
                 </div>
 
                 <!-- Task 1 Gallery -->
-                <h4 class="font-bold text-lg text-slate-800 mb-4 bg-slate-200 py-2 px-4 rounded-lg flex items-center gap-2"><span>🏫</span> 任務一：校園影像紀錄</h4>
+                <h4 class="font-bold text-lg text-slate-800 mb-4 bg-slate-200 py-2 px-4 rounded-lg flex items-center gap-2"> 任務一：校園影像紀錄</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Campus+Multilingual+Signs" alt="校園多語指標" class="w-full h-48 object-cover">
+                        <img src="images/jingshengbuilding.jpg" alt="校園多語指標" class="w-full h-48 object-cover">
                         <div class="p-5">
-                            <h5 class="font-bold text-slate-800 text-base mb-2">辦公室多語標示</h5>
-                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 驚聲大樓10樓 T1001</p>
+                            <h5 class="font-bold text-slate-800 text-base mb-2">境外生輔導組</h5>
+                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 驚聲大樓</p>
                         </div>
                     </div>
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Muslim+Prayer+Room" alt="穆斯林祈禱室" class="w-full h-48 object-cover">
+                        <img src="images/prayer_room.jpg" alt="穆斯林祈禱室" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <h5 class="font-bold text-slate-800 text-base mb-2">穆斯林祈禱室與淨下設施</h5>
-                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 圖書館男女廁所</p>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Accessible+Facilities" alt="無障礙設施" class="w-full h-48 object-cover">
-                        <div class="p-5">
-                            <h5 class="font-bold text-slate-800 text-base mb-2">無障礙環境與通用設計</h5>
-                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 工學大樓、水源街出口</p>
+                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 穆斯林祈禱室</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Task 2 Gallery -->
-                <h4 class="font-bold text-lg text-slate-800 mb-4 bg-slate-200 py-2 px-4 rounded-lg flex items-center gap-2"><span>🏙️</span> 任務二：城市影像紀錄</h4>
+                <h4 class="font-bold text-lg text-slate-800 mb-4 bg-slate-200 py-2 px-4 rounded-lg flex items-center gap-2"> 任務二：城市影像紀錄</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=LRT+Multi-language" alt="輕軌多語系統" class="w-full h-48 object-cover">
+                        <img src="images/LRToutbound.png" alt="輕軌多語系統" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <h5 class="font-bold text-slate-800 text-base mb-2">大眾運輸多語系統</h5>
                             <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 淡海輕軌車站</p>
                         </div>
                     </div>
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Halal+Industry" alt="地方清真產業" class="w-full h-48 object-cover">
+                        <img src="images/mooucurry.png" alt="地方清真產業" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <h5 class="font-bold text-slate-800 text-base mb-2">地方清真產業生態系</h5>
-                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 穆屋咖哩、福容飯店</p>
+                            <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 穆屋咖哩</p>
                         </div>
                     </div>
                     <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Multicultural+Books" alt="多元文化書籍專區" class="w-full h-48 object-cover">
+                        <img src="images/Southeast_Asian_books.jpg" alt="多元文化書籍專區" class="w-full h-48 object-cover">
                         <div class="p-5">
                             <h5 class="font-bold text-slate-800 text-base mb-2">東南亞書籍專區</h5>
                             <p class="text-sm text-slate-500 flex items-center gap-1"><span class="text-xs">📍</span> 市立圖書館淡水水碓分館</p>
@@ -246,7 +219,7 @@
 
             <!-- Chapter 5 -->
             <section id="ch5" class="mb-8 scroll-mt-20 bg-blue-900 text-white p-8 rounded-2xl shadow-lg">
-                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2"><span>🎯</span> 第五章：總結與後續行動建議</h3>
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2"> 第五章：總結與後續行動建議</h3>
                 <p class="leading-relaxed mb-4 text-blue-100">
                     淡江大學與淡水區在推動國際友善環境上，已建立起硬體基礎與軟體服務的微型共生生態系。大學成功扮演了跨文化孵化器的角色；淡水區則透過輕軌多語系統與社會安全網試圖接納外來人口。
                 </p>
@@ -265,20 +238,22 @@
 
     <!-- JavaScript for Interactivity -->
     <script>
-        // --- ScrollSpy for Sidebar Navigation ---
         function setupScrollSpy() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
 
             window.addEventListener('scroll', () => {
                 let current = '';
+                
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
-                    // Adjust threshold for header height
-                    if (scrollY >= (sectionTop - 150)) {
+                    if (window.scrollY >= (sectionTop - 150)) {
                         current = section.getAttribute('id');
                     }
                 });
+                if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 10) {
+                    current = sections[sections.length - 1].getAttribute('id');
+                }
 
                 navLinks.forEach(link => {
                     link.classList.remove('text-blue-700', 'bg-blue-50', 'font-bold');
